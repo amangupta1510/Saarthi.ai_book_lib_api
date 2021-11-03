@@ -2,6 +2,11 @@
 
 This Project is REST API service to get information about books
 
+# you need to install rest Framework to browser access
+
+#GET https://aman1510.pythonanywhere.com/admin
+#username : admin   password : admin123
+
 <h3>Access URLs of project as mentiond in assignment
 
 <h4>GET https://aman1510.pythonanywhere.com/api/v1/external-books?name=:nameOfABook
@@ -38,3 +43,7 @@ This Project is REST API service to get information about books
 <h4>DELETE  https://aman1510.pythonanywhere.com/api/v1/books/:id
 <p>response-type : application/json
 <p>description : This URL Delete Details of book of given ID From local DB
+            
+ <img src="https://github.com/amangupta1510/Task_Board-Mangement/blob/master/screenshot1.jpg">
+ 
+ <img src="https://github.com/amangupta1510/Task_Board-Mangement/blob/master/screenshot2.jpg">
