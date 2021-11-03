@@ -3,9 +3,9 @@
 This Project is REST API service to get information about books
 
 # you need to install rest Framework by using below command to browser access
-pip install djangorestframework
-pip install markdown      
-pip install django-filter
+<p>pip install djangorestframework
+<p>pip install markdown      
+<p>pip install django-filter
 
 #GET https://aman1510.pythonanywhere.com/admin
 #username : admin   password : admin123
