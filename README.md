@@ -19,9 +19,9 @@ This Project is REST API service to get information about books
 <h4>descripton : This URL get book details from  Ice And Fire API 
 
 <h4>POST http://localhost:8000/api/v1/books
-<p>response-type : application/json
-<p>Description : This URL save a book details in local SQlite3 DB
-<p>Params structure: {
+<a>response-type : application/json
+<a>Description : This URL save a book details in local SQlite3 DB
+<a>Params structure: {
             "name": "A Clash of Kings",
             "isbn": "978-0553108033",
             "authors": [
@@ -34,17 +34,17 @@ This Project is REST API service to get information about books
     }</p>
 <br>        
 <h4>GET http://localhost:8000/api/v1/books 
-<p>response-type : application/json
-description : This URL returns a List of all Books Details From local DB
+<a>response-type : application/json
+<a>description : This URL returns a List of all Books Details From local DB
 
 <h4>GET http://localhost:8080/api/v1/books/:id 
-<p>response-type : application/json
-description : This URL returns Book Details of given ID From local DB
+<a>response-type : application/json
+<a>description : This URL returns Book Details of given ID From local DB
 
 <h4>PATCH http://localhost:8080/api/v1/books/:id
-<p>response-type : application/json
-description : This URL Update Details of book of given ID in local DB
+<a>response-type : application/json
+<a>description : This URL Update Details of book of given ID in local DB
 
 <h4>DELETE  http://localhost:8080/api/v1/books/:id
-<p>response-type : application/json
-description : This URL Delete Details of book of given ID From local DB
+<a>response-type : application/json
+<a>description : This URL Delete Details of book of given ID From local DB
