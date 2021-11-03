@@ -2,7 +2,10 @@
 #note Live hosting not fetch data from external api because of hosting restriction but it's work perfectally fine in local server as you can see in last screenshot
 This Project is REST API service to get information about books
 
-# you need to install rest Framework to browser access
+# you need to install rest Framework by using below command to browser access
+pip install djangorestframework
+pip install markdown      
+pip install django-filter
 
 #GET https://aman1510.pythonanywhere.com/admin
 #username : admin   password : admin123
