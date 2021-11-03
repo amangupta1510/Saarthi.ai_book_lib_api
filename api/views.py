@@ -32,7 +32,11 @@ def CreateBook(request):
     if request.method == 'GET':
         book = Book.objects.all()
         serializer = BookSerializer(book, many=True)
-        return Response({"status_code": 200,"status": "success", "data" : serializer.data})
+        output = serializer.data
+        for element in output: 
+            element['authors'] = ast.literal_eval(json.loads(element['authors']))
+
+        return Response({"status_code": 200,"status": "success", "data" : output})
 
     elif request.method == 'POST':
          output = request.data
