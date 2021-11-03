@@ -1,5 +1,5 @@
 # Saarthi.ai_book_lib_api
-
+#note Live hosting not fetch data from external api because of hosting restriction but it's work perfectally fine in local server as you can see in last screenshot
 This Project is REST API service to get information about books
 
 # you need to install rest Framework to browser access
@@ -9,7 +9,7 @@ This Project is REST API service to get information about books
 
 <h3>Access URLs of project as mentiond in assignment
 
-<h4>GET https://aman1510.pythonanywhere.com/api/v1/external-books?name=:nameOfABook
+<h4>GET https://aman1510.pythonanywhere.com/api/external-books?name=:nameOfABook
 <h4>response-type : application/json
 <h4>descripton : This URL get book details from  Ice And Fire API 
 
@@ -45,5 +45,5 @@ This Project is REST API service to get information about books
 <p>description : This URL Delete Details of book of given ID From local DB
             
  <img src="https://github.com/amangupta1510/Saarthi.ai_book_lib_api/blob/master/screenshot 1.png">
- 
  <img src="https://github.com/amangupta1510/Saarthi.ai_book_lib_api/blob/master/screenshot 2.png">
+ <img src="https://github.com/amangupta1510/Saarthi.ai_book_lib_api/blob/master/screenshot 3.png">
