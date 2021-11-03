@@ -7,8 +7,7 @@ This Project is REST API service to get information about books<h2>
 <p>pip install markdown      
 <p>pip install django-filter
 
-#GET https://aman1510.pythonanywhere.com/admin
-#username : admin   password : admin123
+<h3>GET https://aman1510.pythonanywhere.com/admin    username : admin   password : admin123
 
 <h3>Access URLs of project as mentiond in assignment
 
