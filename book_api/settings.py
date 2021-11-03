@@ -25,7 +25,7 @@ SECRET_KEY = 'nfzq$@3b*($&@poth8_w2(^=ve%34zakedjq_@f&298!#-g#&c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['saarthi-book-api.herokuapp.com','127.0.0.1']
 
 
 # Application definition
