@@ -44,6 +44,6 @@ This Project is REST API service to get information about books
 <p>response-type : application/json
 <p>description : This URL Delete Details of book of given ID From local DB
             
- <img src="https://github.com/amangupta1510/Saarthi.ai_book_lib_api/blob/master/screenshot1.png">
+ <img src="https://github.com/amangupta1510/Saarthi.ai_book_lib_api/blob/master/screenshot 1.png">
  
- <img src="https://github.com/amangupta1510/Saarthi.ai_book_lib_api/blob/master//screenshot2.png">
+ <img src="https://github.com/amangupta1510/Saarthi.ai_book_lib_api/blob/master/screenshot 2.png">
