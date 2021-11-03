@@ -5,12 +5,12 @@ This Project is REST API service to get information about books
 #This Project In currently Hosted on https://saarthi.deltatrek.in
 Live Access URLs are  given below
 
-GET    http://saarthi.deltatrek.in/api/v1/external-books?name=:nameOfBook
-POST   http://saarthi.deltatrek.in/api/v1/books
-GET    http://saarthi.deltatrek.in/api/v1/books
-GET    http://saarthi.deltatrek.in/api/v1/books/:id
-PATCH  http://saarthi.deltatrek.in/api/v1/books/:id
-DELETE http://saarthi.deltatrek.in/api/v1/books/:id
+<h4>GET    http://saarthi.deltatrek.in/api/v1/external-books?name=:nameOfBook</h4>
+<h4>POST   http://saarthi.deltatrek.in/api/v1/books
+<h4>GET    http://saarthi.deltatrek.in/api/v1/books
+<h4>GET    http://saarthi.deltatrek.in/api/v1/books/:id
+<h4>PATCH  http://saarthi.deltatrek.in/api/v1/books/:id
+<h4>DELETE http://saarthi.deltatrek.in/api/v1/books/:id
 
 
 Access URLs of project as mentiond in assignment
