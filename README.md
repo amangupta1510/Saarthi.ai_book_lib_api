@@ -1,6 +1,6 @@
 # Saarthi.ai_book_lib_api
-#note Live hosting not fetch data from external api because of hosting restriction but it's work perfectally fine in local server as you can see in last screenshot
-This Project is REST API service to get information about books
+<h2>note Live hosting not fetch data from external api because of hosting restriction but it's work perfectally fine in local server as you can see in last screenshot
+This Project is REST API service to get information about books<h2>
 
 # you need to install rest Framework by using below command to browser access
 <p>pip install djangorestframework
