@@ -35,16 +35,16 @@ This Project is REST API service to get information about books
 <br>        
 <h4>GET http://localhost:8000/api/v1/books 
 <p>response-type : application/json
-<p>description : This URL returns a List of all Books Details From local DB
-<br>
+description : This URL returns a List of all Books Details From local DB
+
 <h4>GET http://localhost:8080/api/v1/books/:id 
 <p>response-type : application/json
-<p>description : This URL returns Book Details of given ID From local DB
-<br>
+description : This URL returns Book Details of given ID From local DB
+
 <h4>PATCH http://localhost:8080/api/v1/books/:id
 <p>response-type : application/json
-<p>description : This URL Update Details of book of given ID in local DB
-<br>
+description : This URL Update Details of book of given ID in local DB
+
 <h4>DELETE  http://localhost:8080/api/v1/books/:id
 <p>response-type : application/json
-<p>description : This URL Delete Details of book of given ID From local DB
+description : This URL Delete Details of book of given ID From local DB
