@@ -50,29 +50,35 @@ def CreateBook(request):
 
 @api_view(['GET','PATCH','DELETE'])
 def ViewBook(request, id):
-    if request.method == 'GET':
-       book = Book.objects.get(id=id)
-       serializer = BookSerializer(book, many=False)
-       output = serializer.data
-       output['authors'] = ast.literal_eval(json.loads(serializer.data['authors']))
-       return Response({"status_code": 200,"status": "success", "data" : output})
+  message="ID "+str(id)+" Does Not Exist in DB"
+  try:
+    
+         if request.method == 'GET':
+            book = Book.objects.get(id=id)
+            serializer = BookSerializer(book, many=False)
+            output = serializer.data
+            output['authors'] = ast.literal_eval(json.loads(serializer.data['authors']))
+            return Response({"status_code": 200,"status": "success", "data" : output})
 
-    elif request.method == 'PATCH':
-         book = Book.objects.get(id=id)
-         output = request.data
-         request.data['authors'] = json.dumps(str(request.data['authors']))
-         serializer = BookSerializer(instance=book, data=request.data)
-         message = ""
-         if serializer.is_valid():
-            serializer.save()
-            message = "The book "+serializer.data['name']+" was updated successfully"
-            request.data['authors'] = ast.literal_eval(json.loads(request.data['authors']))
-            return Response({"status_code": 200,"status": "success", "message": message, "data" : output})
+         elif request.method == 'PATCH':
+              book = Book.objects.get(id=id)
+              output = request.data
+              request.data['authors'] = json.dumps(str(request.data['authors']))
+              serializer = BookSerializer(instance=book, data=request.data)
+              message = ""
+              if serializer.is_valid():
+                 serializer.save()
+                 message = "The book "+serializer.data['name']+" was updated successfully"
+                 request.data['authors'] = ast.literal_eval(json.loads(request.data['authors']))
+                 return Response({"status_code": 200,"status": "success", "message": message, "data" : output})
 
-    elif request.method == 'DELETE':
-         book = Book.objects.get(id=id)
-         message=""
-         serializer = BookSerializer(book, many=False)
-         message = "The book "+serializer.data['name']+" was updated successfully"
-         book.delete()
-         return Response({"status_code": 200,"status": "success", "message": message, "data" : []})
+         elif request.method == 'DELETE':
+              book = Book.objects.get(id=id)
+              message=""
+              serializer = BookSerializer(book, many=False)
+              message = "The book "+serializer.data['name']+" was updated successfully"
+              book.delete()
+              return Response({"status_code": 200,"status": "success", "message": message, "data" : []})
+
+  except Book.DoesNotExist:
+         return Response({"status_code": 404,"status": "resource not found", "message": message, "data" : []})
